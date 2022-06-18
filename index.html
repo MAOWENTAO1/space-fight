@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <img id='explosion1' src="explosion.png" alt="an image of explosion">
+    <img id='explosion2' src="explosion.png" alt="an image of explosion">
+    <section id="info">
+        <p>your speed: <span id="mySpeed"></span></p>
+        <p>your bullet speed: <span id="myBulletSpeed"></span></p>
+        <p>your bullet amount: <span id="myBulletsAmount"></span></p>
+        <p>your max bullet amount: <span id="myMaxBulletsAmount"></span></p>
+        <p>your bullet damage: <span id="myBulletDamage"></span></p>
+
+        <p>enemy speed: <span id="enemySpeed"></span></p>
+        <p>enemy bullet speed: <span id="enemyBulletSpeed"></span></p>
+        <p>enemy bullet amount: <span id="enemyBulletsAmount"></span></p>
+        <p>enemy max bullet amount: <span id="enemyMaxBulletsAmount"></span></p>
+        <p>enemy bullet damage: <span id="enemyBulletDamage"></span></p>
+    </section>
+    <img src="enemy.png" alt="enemy" id="enemyShip" class="ship">
+    <img src="myShip.png" alt="my ship" id="myShip" class="ship">
+    <div id="health">
+        <div class="totalHealthBar" id="enemyTotalHealth">
+            <div class='currentHealthBar' id="enemyShipHealthBarHealth">
+            </div>
+        </div>
+        <div class="totalHealthBar" id="myTotalHealth">
+            <div class='currentHealthBar' id="myShipHealthBarHealth">
+            </div>
+        </div>
+    </div>
+    <div id="bulletContainer"></div>
+    <script src="app.js"></script>
+</body>
+
+</html>

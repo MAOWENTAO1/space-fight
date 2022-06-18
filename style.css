@@ -1,0 +1,97 @@
+body {
+    background-color: rgb(32, 32, 32);
+    width: 100vw;
+    height: 100vh;
+    margin: 0 auto;
+    ;
+}
+
+/*explosion*/
+#explosion1,
+#explosion2 {
+    width: 100px;
+    height: 100px;
+    visibility: hidden;
+    position: fixed;
+    z-index: 10;
+}
+
+/*information*/
+#info {
+    color: aliceblue;
+    position: fixed;
+    top: 200px;
+    right: 10px;
+}
+
+p {
+    line-height: 0.5em;
+    text-align: right;
+}
+
+/*ships*/
+.ship {
+    width: 100px;
+    height: 100px;
+    position: fixed;
+}
+
+#enemyShip {
+    transform: rotate(90deg);
+}
+
+#myShip {
+    bottom: 0px;
+}
+
+/*health bar*/
+#health {
+    border: 2px white solid;
+    height: 207.5px;
+    width: 15px;
+    position: fixed;
+    top: calc(50vh - 150px);
+}
+
+.totalHealthBar {
+    background-color: rgb(139, 139, 139);
+    height: 100px;
+    width: 10px;
+    position: absolute;
+    left: 2.5px;
+}
+
+#enemyTotalHealth {
+    top: 2.5px;
+}
+
+#myTotalHealth {
+    bottom: 2.5px;
+}
+
+.currentHealthBar {
+    background-color: brown;
+    height: 100px;
+    width: 10px;
+    position: absolute;
+    bottom: 0;
+}
+
+#myShipHealthBarHealth {
+    background-color: crimson;
+}
+
+/*bullet*/
+.bullet {
+    width: 5px;
+    height: 5px;
+    position: fixed;
+}
+
+.bullet.my {
+    background-color: rgb(229, 255, 0);
+}
+
+.bullet.enemy {
+    background-color: red;
+}
